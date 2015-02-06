@@ -589,6 +589,9 @@
                     startSlideShow(); //resume slide show when an image is loaded
                 }
             });
+            // Requires jquery-mobile
+            $slide.on('swiperight', Handlers.sliderPrevClick);
+            $slide.on('swipeleft', Handlers.sliderNextClick);
 
             return $slide;
         };
